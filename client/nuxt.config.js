@@ -42,7 +42,13 @@ export default {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
+    '@nuxtjs/axios' // add this
   ],
+
+  // add this Axios object
+  axios: {
+    baseURL: "http://localhost:8000/api"
+  },
 
   /*
   ** Build configuration
@@ -55,3 +61,8 @@ export default {
     }
   }
 }
+
+module.exports = {
+  css: ['~/assets/css/transitions.css'], // update this
+}
+
